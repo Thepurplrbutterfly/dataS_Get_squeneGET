@@ -66,7 +66,7 @@ void list_sequencing(sl * S)
     int i,j,midn;
     for(i = 0; i < S->maxlen-1; i++)
     {
-        for(j = 0; j < S->maxlen-i; j++)
+        for(j = 0; j < S->maxlen-1-i; j++)
         {
             if(S->data[j]>S->data[j+1])
             {
