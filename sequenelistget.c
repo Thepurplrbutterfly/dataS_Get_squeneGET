@@ -14,7 +14,7 @@ sl * list_create(int value)
     }
     S->head = S->last = 0;
     S->maxlen = value;
-    S->data = (data_t *)malloc(S->maxlen);
+    S->data = (data_t *)malloc((sizeof)data_t*S->maxlen);
     if(S->data == NULL)
     {
         printf("the memory assigning for array S->data failed->the list creating failed!\n");
